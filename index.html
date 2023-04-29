@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			display: flex;
+			justify-content: center;
+		}
+		.main{
+			width: 60%;
+			min-width: 300px;
+			height: 300px;
+			text-align: center;
+		}
+		input{
+			height: 40px;
+		}
+		textarea{
+			width: 100%;
+			font-size: 25px;
+		}
+	</style>
+</head>
+
+<body id="mayrbody">
+	<div class='main'>
+		<textarea name="" id="text" onkeyup="realTimeRegistr(this.value)" cols="50" rows="10"></textarea>
+		<input type="button" onclick="randomColor()" id="randomColor" value="random color">
+		<div>
+			<p> Letters <spam id="letters">0</spam> </p> 
+			<p> Words <spam id="words">0</spam> </p>
+			<p> Sentences <spam id="sentences">0</spam> </p>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
